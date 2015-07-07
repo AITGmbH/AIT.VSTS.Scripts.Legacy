@@ -16,26 +16,12 @@
 
 
 param(
-    [string]$Url = "https://m-dittrich.visualstudio.com/DefaultCollection",
-    [string]$ProjectName = "Find-Moved-Work-Items",
-    [string]$Team = "Team1",
-    [string]$Title = "Team Work Item",
-	[string]$WorkItemType = "Product Backlog Item"
+    [string]$Url,
+    [string]$ProjectName,
+    [string]$Team,
+    [string]$Title,
+	[string]$WorkItemType
 )
-
-# Unused function to load defaults in the Interactive
-function Set-Defaults
-{
-    $Url = "https://m-dittrich.visualstudio.com/DefaultCollection"
-    $ProjectName = "Find-Moved-Work-Items"
-    $Team = "Team1"
-    $Title = "Team Work Item"	
-
-    $Url = "https://ait.visualstudio.com/DefaultCollection"
-    $ProjectName = "AIT"
-    $Team = "Team.Phoenix"
-    $Title = "Team Work Item"	
-}
 
 #Load TFS PowerShell Snap-in
 if ((Get-PSSnapIn -Name Microsoft.TeamFoundation.PowerShell -ErrorAction SilentlyContinue) -eq $null)
