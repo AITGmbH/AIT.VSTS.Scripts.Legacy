@@ -78,7 +78,6 @@ if ([System.String]::IsNullOrEmpty($Team))
 	throw "Please enter a Team name!"
 }
 
-$project = $store.Projects[$ProjectName]
 $proj = $css4.GetProjectFromName($ProjectName)
 $allTeams = $teamService.QueryTeams($proj.Uri)
 
@@ -104,8 +103,7 @@ $defaultTeamArea = $teamConfig.TeamFieldValues[0].Value
 Write-Host "Using default area of team: $defaultTeamArea"
 
 
-# http://blog.johnsworkshop.net/tfs11-api-query-teams-and-team-members/
-$members = $foundTeam.GetMembers($TeamProjectCollection, [Microsoft.TeamFoundation.Framework.Common.MembershipQuery]::Expanded)
+$project = $store.Projects[$ProjectName]
 
 $wit = $project.WorkItemTypes[$WorkItemType]
 if (!$wit) {
@@ -126,6 +124,9 @@ $pbi.Save()
 
 $linkType = $store.WorkItemLinkTypes["System.LinkTypes.Hierarchy"]
 $pbiId = $pbi.Id
+
+# http://blog.johnsworkshop.net/tfs11-api-query-teams-and-team-members/
+$members = $foundTeam.GetMembers($TeamProjectCollection, [Microsoft.TeamFoundation.Framework.Common.MembershipQuery]::Expanded)
 
 ForEach ($member in $members) {
 	if(!$member.IsContainer) {
