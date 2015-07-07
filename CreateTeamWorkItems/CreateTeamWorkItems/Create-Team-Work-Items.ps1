@@ -58,10 +58,14 @@ $TeamProjectCollection = [Microsoft.TeamFoundation.Client.TfsTeamProjectCollecti
 $TeamProjectCollection.EnsureAuthenticated()
 
 # Service instances
-$css4 = ($TeamProjectCollection.GetService([type]"Microsoft.TeamFoundation.Server.ICommonStructureService4")) -as [Microsoft.TeamFoundation.Server.ICommonStructureService4]
-$teamService = ($TeamProjectCollection.GetService([type]"Microsoft.TeamFoundation.Client.TfsTeamService")) -as [Microsoft.TeamFoundation.Client.TfsTeamService]
-$teamConfigService = ($TeamProjectCollection.GetService([type]"Microsoft.TeamFoundation.ProcessConfiguration.Client.TeamSettingsConfigurationService")) -as [Microsoft.TeamFoundation.ProcessConfiguration.Client.TeamSettingsConfigurationService]
-$store = ($TeamProjectCollection.GetService([type]"Microsoft.TeamFoundation.WorkItemTracking.Client.WorkItemStore")) -as [Microsoft.TeamFoundation.WorkItemTracking.Client.WorkItemStore]
+$css4 = ($TeamProjectCollection.GetService([type]"Microsoft.TeamFoundation.Server.ICommonStructureService4")) -as 
+		[Microsoft.TeamFoundation.Server.ICommonStructureService4]
+$teamService = ($TeamProjectCollection.GetService([type]"Microsoft.TeamFoundation.Client.TfsTeamService")) -as 
+		[Microsoft.TeamFoundation.Client.TfsTeamService]
+$teamConfigService = ($TeamProjectCollection.GetService([type]"Microsoft.TeamFoundation.ProcessConfiguration.Client.TeamSettingsConfigurationService")) -as 
+		[Microsoft.TeamFoundation.ProcessConfiguration.Client.TeamSettingsConfigurationService]
+$store = ($TeamProjectCollection.GetService([type]"Microsoft.TeamFoundation.WorkItemTracking.Client.WorkItemStore")) -as 
+		[Microsoft.TeamFoundation.WorkItemTracking.Client.WorkItemStore]
 
 
 if ([System.String]::IsNullOrEmpty($ProjectName))
