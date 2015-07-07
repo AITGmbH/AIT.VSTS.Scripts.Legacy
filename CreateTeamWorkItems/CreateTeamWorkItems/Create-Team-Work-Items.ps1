@@ -20,7 +20,7 @@ param(
     [string]$ProjectName,
     [string]$Team,
     [string]$Title,
-	[string]$WorkItemType
+    [string]$WorkItemType
 )
 
 #Load TFS PowerShell Snap-in
