@@ -33,11 +33,8 @@ if ((Get-PSSnapIn -Name Microsoft.TeamFoundation.PowerShell -ErrorAction Silentl
 [System.Threading.Thread]::CurrentThread.CurrentCulture = "de-DE"
 
 #Load Reference Assemblies
-[void][System.Reflection.Assembly]::LoadWithPartialName("Microsoft.TeamFoundation.Client")  
-[void][System.Reflection.Assembly]::LoadWithPartialName("Microsoft.TeamFoundation.Build.Client")  
-[void][System.Reflection.Assembly]::LoadWithPartialName("Microsoft.TeamFoundation.Build.Common") 
-[void][System.Reflection.Assembly]::LoadWithPartialName("Microsoft.TeamFoundation.WorkItemTracking.Client") 
-[void][System.Reflection.Assembly]::LoadWithPartialName("Microsoft.TeamFoundation.VersionControl.Client") 
+[void][System.Reflection.Assembly]::LoadWithPartialName("Microsoft.TeamFoundation.Client")
+[void][System.Reflection.Assembly]::LoadWithPartialName("Microsoft.TeamFoundation.WorkItemTracking.Client")
 [void][System.Reflection.Assembly]::LoadWithPartialName("Microsoft.TeamFoundation.ProjectManagement") 
 
 $TeamProjectCollection = [Microsoft.TeamFoundation.Client.TfsTeamProjectCollectionFactory]::GetTeamProjectCollection($Url)
