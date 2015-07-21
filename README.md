@@ -1,7 +1,8 @@
 # AIT.Scripts.WorkItems
-PowerShell Scripts for TFS-WorkItem manipulation.
 
-## Create-Backlog-Item-And-Tasks-For-Team-Memebers.ps1
+Contains PowerShell Scripts for TFS-WorkItem manipulation.
+
+## Create-Backlog-Item-And-Tasks-For-Team-Members.ps1
 
 Automatically creates a single Product Backlog Item (PBI) for a team and a workitem for every member within the team.
 
