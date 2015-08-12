@@ -9,7 +9,7 @@ Automatically creates a single Product Backlog Item (PBI) for a team and a worki
 SPACES IN ARGUMENTS MUST BE ENCLOSED BY SINGLE QUOTES
 
 Example: Create the items with the given title for the given server.
-  .\Create-Team-Work-Items -Url "https://ait.visualstudio.com/DefaultCollection" -ProjectName "AIT" -Team "Team.Phoenix" -Title "My New Work Item Title" -WorkItemType "Requirement"
+  .\Create-Team-Work-Items -Url "https://example.visualstudio.com/DefaultCollection" -ProjectName "MyProject" -Team "ExampleTeam" -Title "My New Work Item Title" -WorkItemType "Requirement"
 
 Known Bugs:
 When your DisplayName's are not unique one of the duplicates with get all workitems. See 
