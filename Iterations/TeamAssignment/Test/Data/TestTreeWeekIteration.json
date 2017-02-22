@@ -1,0 +1,162 @@
+{
+  "id": 16,
+  "identifier": "9aa08132-85bc-49d2-80c7-c939f6fcca89",
+  "name": "2017",
+  "structureType": "iteration",
+  "hasChildren": true,
+  "children": [
+    {
+      "id": 19,
+      "identifier": "f80a5df6-ce20-4387-a256-88306f244c2b",
+      "name": "q1",
+      "structureType": "iteration",
+      "hasChildren": true,
+      "children": [
+        {
+          "id": 24,
+          "identifier": "55117794-4a95-438f-ad5c-26be82b0aaf6",
+          "name": "KW1",
+          "structureType": "iteration",
+          "hasChildren": false,
+          "url": "https://example.com/ddd10814-3263-49a8-94c3-f5d2e0a66097/_apis/wit/classificationNodes/Iterations/2017/q1/KW1"
+        },
+        {
+          "id": 26,
+          "identifier": "d86be62b-9afc-488f-8e45-d989c5c6d40c",
+          "name": "KW 2",
+          "structureType": "iteration",
+          "hasChildren": true,
+          "url": "https://example.com/ddd10814-3263-49a8-94c3-f5d2e0a66097/_apis/wit/classificationNodes/Iterations/2017/q1/KW%202"
+        },
+        {
+          "id": 27,
+          "identifier": "0f2762c2-ca75-4125-83a8-fc55cebb3c61",
+          "name": "KW3",
+          "structureType": "iteration",
+          "hasChildren": false,
+          "url": "https://example.com/ddd10814-3263-49a8-94c3-f5d2e0a66097/_apis/wit/classificationNodes/Iterations/2017/q1/KW3"
+        },
+        {
+          "id": 28,
+          "identifier": "2f00d839-9d05-48e9-a55c-8206242c5c8a",
+          "name": "KW4",
+          "structureType": "iteration",
+          "hasChildren": false,
+          "url": "https://example.com/ddd10814-3263-49a8-94c3-f5d2e0a66097/_apis/wit/classificationNodes/Iterations/2017/q1/KW4"
+        }
+      ],
+      "url": "https://example.com/ddd10814-3263-49a8-94c3-f5d2e0a66097/_apis/wit/classificationNodes/Iterations/2017/q1"
+    },
+    {
+      "id": 20,
+      "identifier": "10f6cbc4-edb2-4a53-9191-8d16cfd939be",
+      "name": "q2",
+      "structureType": "iteration",
+      "hasChildren": true,
+      "children": [
+        {
+          "id": 29,
+          "identifier": "8a77ed0a-3023-45d1-94c5-aa84f1dde69e",
+          "name": "Kw5",
+          "structureType": "iteration",
+          "hasChildren": false,
+          "url": "https://example.com/ddd10814-3263-49a8-94c3-f5d2e0a66097/_apis/wit/classificationNodes/Iterations/2017/q2/Kw5"
+        },
+        {
+          "id": 30,
+          "identifier": "eff7dff3-f1e8-4312-97d6-75744e4a993b",
+          "name": "Kw6",
+          "structureType": "iteration",
+          "hasChildren": false,
+          "url": "https://example.com/ddd10814-3263-49a8-94c3-f5d2e0a66097/_apis/wit/classificationNodes/Iterations/2017/q2/Kw6"
+        },
+        {
+          "id": 31,
+          "identifier": "d779892a-e421-431b-8161-6971d55c4307",
+          "name": "Kw 7",
+          "structureType": "iteration",
+          "hasChildren": false,
+          "url": "https://example.com/ddd10814-3263-49a8-94c3-f5d2e0a66097/_apis/wit/classificationNodes/Iterations/2017/q2/Kw%207"
+        }
+      ],
+      "url": "https://example.com/ddd10814-3263-49a8-94c3-f5d2e0a66097/_apis/wit/classificationNodes/Iterations/2017/q2"
+    },
+    {
+      "id": 22,
+      "identifier": "187e7069-962d-437a-89ba-4f8f509e7189",
+      "name": "q3",
+      "structureType": "iteration",
+      "hasChildren": true,
+      "children": [
+        {
+          "id": 32,
+          "identifier": "02243561-6791-449a-a0b8-19deb63fac44",
+          "name": "kw31",
+          "structureType": "iteration",
+          "hasChildren": false,
+          "url": "https://example.com/ddd10814-3263-49a8-94c3-f5d2e0a66097/_apis/wit/classificationNodes/Iterations/2017/q3/kw31"
+        },
+        {
+          "id": 33,
+          "identifier": "67542567-7edf-4962-8574-db6f28c747be",
+          "name": "kw 32",
+          "structureType": "iteration",
+          "hasChildren": false,
+          "url": "https://example.com/ddd10814-3263-49a8-94c3-f5d2e0a66097/_apis/wit/classificationNodes/Iterations/2017/q3/kw%2032"
+        },
+        {
+          "id": 34,
+          "identifier": "8974eb84-81d5-4f9c-9f81-e7fa439ecd87",
+          "name": "kw33",
+          "structureType": "iteration",
+          "hasChildren": false,
+          "url": "https://example.com/ddd10814-3263-49a8-94c3-f5d2e0a66097/_apis/wit/classificationNodes/Iterations/2017/q3/kw33"
+        }
+      ],
+      "url": "https://example.com/ddd10814-3263-49a8-94c3-f5d2e0a66097/_apis/wit/classificationNodes/Iterations/2017/q3"
+    },
+    {
+      "id": 23,
+      "identifier": "d58bd648-817f-41ef-afd9-3d67cdafa7d0",
+      "name": "q4",
+      "structureType": "iteration",
+      "hasChildren": true,
+      "children": [
+        {
+          "id": 35,
+          "identifier": "ce6af322-0b12-4980-9513-c6e8a9c7bad8",
+          "name": "kw40",
+          "structureType": "iteration",
+          "hasChildren": false,
+          "url": "https://example.com/ddd10814-3263-49a8-94c3-f5d2e0a66097/_apis/wit/classificationNodes/Iterations/2017/q4/kw40"
+        },
+        {
+          "id": 36,
+          "identifier": "91c84d8e-7b03-4f09-96f5-38ac9fa6f89c",
+          "name": "kw41",
+          "structureType": "iteration",
+          "hasChildren": false,
+          "url": "https://example.com/ddd10814-3263-49a8-94c3-f5d2e0a66097/_apis/wit/classificationNodes/Iterations/2017/q4/kw41"
+        },
+        {
+          "id": 37,
+          "identifier": "b425fe0d-45af-4015-a3f9-c29a52741900",
+          "name": "kw42",
+          "structureType": "iteration",
+          "hasChildren": false,
+          "url": "https://example.com/ddd10814-3263-49a8-94c3-f5d2e0a66097/_apis/wit/classificationNodes/Iterations/2017/q4/kw42"
+        }
+      ],
+      "url": "https://example.com/ddd10814-3263-49a8-94c3-f5d2e0a66097/_apis/wit/classificationNodes/Iterations/2017/q4"
+    }
+  ],
+  "attributes": {
+    "startDate": "2017-01-01T00:00:00Z",
+    "finishDate": "2017-12-31T00:00:00Z"
+  },
+  "_links": {
+    "self": { "href": "https://example.com/ddd10814-3263-49a8-94c3-f5d2e0a66097/_apis/wit/classificationNodes/Iterations/2017" },
+    "parent": { "href": "https://example.com/ddd10814-3263-49a8-94c3-f5d2e0a66097/_apis/wit/classificationNodes/Iterations" }
+  },
+  "url": "https://example.com/ddd10814-3263-49a8-94c3-f5d2e0a66097/_apis/wit/classificationNodes/Iterations/2017"
+}

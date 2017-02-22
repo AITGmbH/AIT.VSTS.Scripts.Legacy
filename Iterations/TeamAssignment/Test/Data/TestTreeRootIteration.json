@@ -1,0 +1,35 @@
+{
+  "id": 599,
+  "identifier": "5bc7fbfe-1872-4204-bb80-714481e996c1",
+  "name": "t",
+  "structureType": "iteration",
+  "hasChildren": true,
+  "children": [
+    {
+      "id": 601,
+      "identifier": "552de302-d424-41a4-a922-7c590029af91",
+      "name": "Iteration 1",
+      "structureType": "iteration",
+      "hasChildren": true,
+      "url": "https://example.visualstudio.com/59827ca2-1e8a-4510-9a23-3923fe0b8540/_apis/wit/classificationNodes/Iterations/Iteration%201"
+    },
+    {
+      "id": 602,
+      "identifier": "7e98e6d1-1c18-4164-b709-8600e00b643e",
+      "name": "Iteration 2",
+      "structureType": "iteration",
+      "hasChildren": true,
+      "url": "https://example.visualstudio.com/59827ca2-1e8a-4510-9a23-3923fe0b8540/_apis/wit/classificationNodes/Iterations/Iteration%202"
+    },
+    {
+      "id": 603,
+      "identifier": "3ebd8212-c8bf-4d38-9f08-c5710ce69bb3",
+      "name": "Iteration 3",
+      "structureType": "iteration",
+      "hasChildren": true,
+      "url": "https://example.visualstudio.com/59827ca2-1e8a-4510-9a23-3923fe0b8540/_apis/wit/classificationNodes/Iterations/Iteration%203"
+    }
+  ],
+  "_links": { "self": { "href": "https://example.visualstudio.com/59827ca2-1e8a-4510-9a23-3923fe0b8540/_apis/wit/classificationNodes/Iterations" } },
+  "url": "https://example.visualstudio.com/59827ca2-1e8a-4510-9a23-3923fe0b8540/_apis/wit/classificationNodes/Iterations"
+}

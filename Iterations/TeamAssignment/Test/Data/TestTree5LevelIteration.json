@@ -1,0 +1,330 @@
+{
+  "id": 418,
+  "identifier": "97d746af-266b-419c-a0bd-9b9e91904754",
+  "name": "2017",
+  "structureType": "iteration",
+  "hasChildren": true,
+  "children": [
+    {
+      "id": 423,
+      "identifier": "58c868df-bc2f-42f9-8dd7-f97b839f1a0c",
+      "name": "Q1",
+      "structureType": "iteration",
+      "hasChildren": true,
+      "children": [
+        {
+          "id": 427,
+          "identifier": "17844d03-3e84-43d4-9fee-e05e07755796",
+          "name": "January",
+          "structureType": "iteration",
+          "hasChildren": true,
+          "children": [
+            {
+              "id": 428,
+              "identifier": "055e02a2-fed5-4c66-96ee-482e94054529",
+              "name": "KW 1",
+              "structureType": "iteration",
+              "hasChildren": false,
+              "attributes": {
+                "startDate": "2017-01-02T00:00:00Z",
+                "finishDate": "2017-01-06T00:00:00Z"
+              },
+              "url": "https://example.visualstudio.com/ddd10814-3263-49a8-94c3-f5d2e0a66097/_apis/wit/classificationNodes/Iterations/2017/Q1/January/KW%201"
+            },
+            {
+              "id": 429,
+              "identifier": "255639d8-8b4b-4724-81e1-6a043905f6ee",
+              "name": "KW 2",
+              "structureType": "iteration",
+              "hasChildren": false,
+              "attributes": {
+                "startDate": "2017-01-09T00:00:00Z",
+                "finishDate": "2017-01-13T00:00:00Z"
+              },
+              "url": "https://example.visualstudio.com/ddd10814-3263-49a8-94c3-f5d2e0a66097/_apis/wit/classificationNodes/Iterations/2017/Q1/January/KW%202"
+            },
+            {
+              "id": 430,
+              "identifier": "98e3bd72-56cb-4b67-a1e7-a847616801d6",
+              "name": "KW 3",
+              "structureType": "iteration",
+              "hasChildren": false,
+              "attributes": {
+                "startDate": "2017-01-16T00:00:00Z",
+                "finishDate": "2017-01-20T00:00:00Z"
+              },
+              "url": "https://example.visualstudio.com/ddd10814-3263-49a8-94c3-f5d2e0a66097/_apis/wit/classificationNodes/Iterations/2017/Q1/January/KW%203"
+            },
+            {
+              "id": 431,
+              "identifier": "d796dd66-a76b-4961-94a7-6df90cace238",
+              "name": "KW 4",
+              "structureType": "iteration",
+              "hasChildren": false,
+              "attributes": {
+                "startDate": "2017-01-23T00:00:00Z",
+                "finishDate": "2017-01-27T00:00:00Z"
+              },
+              "url": "https://example.visualstudio.com/ddd10814-3263-49a8-94c3-f5d2e0a66097/_apis/wit/classificationNodes/Iterations/2017/Q1/January/KW%204"
+            }
+          ],
+          "attributes": {
+            "startDate": "2017-01-02T00:00:00Z",
+            "finishDate": "2017-01-27T00:00:00Z"
+          },
+          "url": "https://example.visualstudio.com/ddd10814-3263-49a8-94c3-f5d2e0a66097/_apis/wit/classificationNodes/Iterations/2017/Q1/January"
+        },
+        {
+          "id": 432,
+          "identifier": "52d70590-3d07-49fe-8747-3321e4b282cb",
+          "name": "February",
+          "structureType": "iteration",
+          "hasChildren": true,
+          "children": [
+            {
+              "id": 433,
+              "identifier": "010c5272-6384-4f52-ae31-f9518b7941eb",
+              "name": "KW 5",
+              "structureType": "iteration",
+              "hasChildren": false,
+              "attributes": {
+                "startDate": "2017-01-30T00:00:00Z",
+                "finishDate": "2017-02-03T00:00:00Z"
+              },
+              "url": "https://example.visualstudio.com/ddd10814-3263-49a8-94c3-f5d2e0a66097/_apis/wit/classificationNodes/Iterations/2017/Q1/February/KW%205"
+            },
+            {
+              "id": 434,
+              "identifier": "f698e856-4826-4215-9b59-9f193da2b5ad",
+              "name": "KW 6",
+              "structureType": "iteration",
+              "hasChildren": false,
+              "attributes": {
+                "startDate": "2017-02-06T00:00:00Z",
+                "finishDate": "2017-02-10T00:00:00Z"
+              },
+              "url": "https://example.visualstudio.com/ddd10814-3263-49a8-94c3-f5d2e0a66097/_apis/wit/classificationNodes/Iterations/2017/Q1/February/KW%206"
+            },
+            {
+              "id": 435,
+              "identifier": "83e4504b-d52e-434a-b8b6-59b1232977d0",
+              "name": "KW 7",
+              "structureType": "iteration",
+              "hasChildren": false,
+              "attributes": {
+                "startDate": "2017-02-13T00:00:00Z",
+                "finishDate": "2017-02-17T00:00:00Z"
+              },
+              "url": "https://example.visualstudio.com/ddd10814-3263-49a8-94c3-f5d2e0a66097/_apis/wit/classificationNodes/Iterations/2017/Q1/February/KW%207"
+            },
+            {
+              "id": 436,
+              "identifier": "a543f619-55b7-4809-b8a4-f9ecfee7b059",
+              "name": "KW 8",
+              "structureType": "iteration",
+              "hasChildren": false,
+              "attributes": {
+                "startDate": "2017-02-20T00:00:00Z",
+                "finishDate": "2017-02-24T00:00:00Z"
+              },
+              "url": "https://example.visualstudio.com/ddd10814-3263-49a8-94c3-f5d2e0a66097/_apis/wit/classificationNodes/Iterations/2017/Q1/February/KW%208"
+            }
+          ],
+          "attributes": {
+            "startDate": "2017-01-30T00:00:00Z",
+            "finishDate": "2017-02-24T00:00:00Z"
+          },
+          "url": "https://example.visualstudio.com/ddd10814-3263-49a8-94c3-f5d2e0a66097/_apis/wit/classificationNodes/Iterations/2017/Q1/February"
+        },
+        {
+          "id": 437,
+          "identifier": "8b72385c-bc26-4225-aea8-f4af2ab012fa",
+          "name": "March",
+          "structureType": "iteration",
+          "hasChildren": true,
+          "children": [
+            {
+              "id": 438,
+              "identifier": "5e6596a9-623a-48e1-9406-872091e74cd3",
+              "name": "KW 9",
+              "structureType": "iteration",
+              "hasChildren": false,
+              "attributes": {
+                "startDate": "2017-02-27T00:00:00Z",
+                "finishDate": "2017-03-03T00:00:00Z"
+              },
+              "url": "https://example.visualstudio.com/ddd10814-3263-49a8-94c3-f5d2e0a66097/_apis/wit/classificationNodes/Iterations/2017/Q1/March/KW%209"
+            },
+            {
+              "id": 439,
+              "identifier": "7d73ad8d-35d2-4606-99b7-5f0d8efc7757",
+              "name": "KW 10",
+              "structureType": "iteration",
+              "hasChildren": false,
+              "attributes": {
+                "startDate": "2017-03-06T00:00:00Z",
+                "finishDate": "2017-03-10T00:00:00Z"
+              },
+              "url": "https://example.visualstudio.com/ddd10814-3263-49a8-94c3-f5d2e0a66097/_apis/wit/classificationNodes/Iterations/2017/Q1/March/KW%2010"
+            },
+            {
+              "id": 440,
+              "identifier": "083af2ae-e5e0-4611-8611-a30cebb277d7",
+              "name": "KW 11",
+              "structureType": "iteration",
+              "hasChildren": false,
+              "attributes": {
+                "startDate": "2017-03-13T00:00:00Z",
+                "finishDate": "2017-03-17T00:00:00Z"
+              },
+              "url": "https://example.visualstudio.com/ddd10814-3263-49a8-94c3-f5d2e0a66097/_apis/wit/classificationNodes/Iterations/2017/Q1/March/KW%2011"
+            },
+            {
+              "id": 441,
+              "identifier": "de4a9564-aff4-4c63-9900-ead3380de2ba",
+              "name": "KW 12",
+              "structureType": "iteration",
+              "hasChildren": false,
+              "attributes": {
+                "startDate": "2017-03-20T00:00:00Z",
+                "finishDate": "2017-03-24T00:00:00Z"
+              },
+              "url": "https://example.visualstudio.com/ddd10814-3263-49a8-94c3-f5d2e0a66097/_apis/wit/classificationNodes/Iterations/2017/Q1/March/KW%2012"
+            },
+            {
+              "id": 442,
+              "identifier": "c390fdc0-7024-46ad-93b3-afbaa8d1c455",
+              "name": "KW 13",
+              "structureType": "iteration",
+              "hasChildren": false,
+              "attributes": {
+                "startDate": "2017-03-27T00:00:00Z",
+                "finishDate": "2017-03-31T00:00:00Z"
+              },
+              "url": "https://example.visualstudio.com/ddd10814-3263-49a8-94c3-f5d2e0a66097/_apis/wit/classificationNodes/Iterations/2017/Q1/March/KW%2013"
+            }
+          ],
+          "attributes": {
+            "startDate": "2017-02-27T00:00:00Z",
+            "finishDate": "2017-03-31T00:00:00Z"
+          },
+          "url": "https://example.visualstudio.com/ddd10814-3263-49a8-94c3-f5d2e0a66097/_apis/wit/classificationNodes/Iterations/2017/Q1/March"
+        }
+      ],
+      "attributes": {
+        "startDate": "2017-01-01T00:00:00Z",
+        "finishDate": "2017-03-31T00:00:00Z"
+      },
+      "url": "https://example.visualstudio.com/ddd10814-3263-49a8-94c3-f5d2e0a66097/_apis/wit/classificationNodes/Iterations/2017/Q1"
+    },
+    {
+      "id": 424,
+      "identifier": "515d1d0a-baab-4ae1-994c-4888ad6506f5",
+      "name": "Q2",
+      "structureType": "iteration",
+      "hasChildren": true,
+      "children": [
+        {
+          "id": 443,
+          "identifier": "8ea79331-7d80-4adf-95dc-05acb6cbfb5e",
+          "name": "April",
+          "structureType": "iteration",
+          "hasChildren": true,
+          "children": [
+            {
+              "id": 444,
+              "identifier": "dfeab54e-bf96-4b3a-90be-507df2d8819c",
+              "name": "KW 14",
+              "structureType": "iteration",
+              "hasChildren": false,
+              "attributes": {
+                "startDate": "2017-04-03T00:00:00Z",
+                "finishDate": "2017-04-07T00:00:00Z"
+              },
+              "url": "https://example.visualstudio.com/ddd10814-3263-49a8-94c3-f5d2e0a66097/_apis/wit/classificationNodes/Iterations/2017/Q2/April/KW%2014"
+            },
+            {
+              "id": 445,
+              "identifier": "f6e40a4f-ab7d-40ee-839a-92dfcb1130fb",
+              "name": "KW 15",
+              "structureType": "iteration",
+              "hasChildren": false,
+              "attributes": {
+                "startDate": "2017-04-10T00:00:00Z",
+                "finishDate": "2017-04-14T00:00:00Z"
+              },
+              "url": "https://example.visualstudio.com/ddd10814-3263-49a8-94c3-f5d2e0a66097/_apis/wit/classificationNodes/Iterations/2017/Q2/April/KW%2015"
+            },
+            {
+              "id": 446,
+              "identifier": "116042f6-9e48-40b4-b6c1-cadb992e1fec",
+              "name": "KW 16",
+              "structureType": "iteration",
+              "hasChildren": false,
+              "attributes": {
+                "startDate": "2017-04-17T00:00:00Z",
+                "finishDate": "2017-04-21T00:00:00Z"
+              },
+              "url": "https://example.visualstudio.com/ddd10814-3263-49a8-94c3-f5d2e0a66097/_apis/wit/classificationNodes/Iterations/2017/Q2/April/KW%2016"
+            },
+            {
+              "id": 447,
+              "identifier": "27525cbf-63f4-449e-89dd-1365e352bdb0",
+              "name": "KW 17",
+              "structureType": "iteration",
+              "hasChildren": false,
+              "attributes": {
+                "startDate": "2017-04-24T00:00:00Z",
+                "finishDate": "2017-04-28T00:00:00Z"
+              },
+              "url": "https://example.visualstudio.com/ddd10814-3263-49a8-94c3-f5d2e0a66097/_apis/wit/classificationNodes/Iterations/2017/Q2/April/KW%2017"
+            }
+          ],
+          "attributes": {
+            "startDate": "2017-04-03T00:00:00Z",
+            "finishDate": "2017-04-28T00:00:00Z"
+          },
+          "url": "https://example.visualstudio.com/ddd10814-3263-49a8-94c3-f5d2e0a66097/_apis/wit/classificationNodes/Iterations/2017/Q2/April"
+        }
+      ],
+      "attributes": {
+        "startDate": "2017-04-01T00:00:00Z",
+        "finishDate": "2017-06-30T00:00:00Z"
+      },
+      "url": "https://example.visualstudio.com/ddd10814-3263-49a8-94c3-f5d2e0a66097/_apis/wit/classificationNodes/Iterations/2017/Q2"
+    },
+    {
+      "id": 425,
+      "identifier": "b325ed25-4823-4d02-86c9-cb539561ef9b",
+      "name": "Q3",
+      "structureType": "iteration",
+      "hasChildren": false,
+      "attributes": {
+        "startDate": "2017-07-01T00:00:00Z",
+        "finishDate": "2017-09-30T00:00:00Z"
+      },
+      "url": "https://example.visualstudio.com/ddd10814-3263-49a8-94c3-f5d2e0a66097/_apis/wit/classificationNodes/Iterations/2017/Q3"
+    },
+    {
+      "id": 426,
+      "identifier": "f6734663-df77-498a-9d82-501bc2d4faf0",
+      "name": "Q4",
+      "structureType": "iteration",
+      "hasChildren": false,
+      "attributes": {
+        "startDate": "2017-10-01T00:00:00Z",
+        "finishDate": "2017-12-31T00:00:00Z"
+      },
+      "url": "https://example.visualstudio.com/ddd10814-3263-49a8-94c3-f5d2e0a66097/_apis/wit/classificationNodes/Iterations/2017/Q4"
+    }
+  ],
+  "attributes": {
+    "startDate": "2017-01-01T00:00:00Z",
+    "finishDate": "2017-12-31T00:00:00Z"
+  },
+  "_links": {
+    "self": { "href": "https://example.visualstudio.com/ddd10814-3263-49a8-94c3-f5d2e0a66097/_apis/wit/classificationNodes/Iterations/2017" },
+    "parent": { "href": "https://example.visualstudio.com/ddd10814-3263-49a8-94c3-f5d2e0a66097/_apis/wit/classificationNodes/Iterations" }
+  },
+  "url": "https://example.visualstudio.com/ddd10814-3263-49a8-94c3-f5d2e0a66097/_apis/wit/classificationNodes/Iterations/2017"
+}

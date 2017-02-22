@@ -1,0 +1,6 @@
+2017/Q1/January/KW 1 - KW 2/KW 1
+Iteration Level 1/Iteration Level 1.2/Iteration Level 1.2.3/Iteration Level 1.2.3.4/Iteration Level 1.2.3.4.5
+year/Month/Week/Day/Hour
+extra-large-text-without-spaces/next-level-extra-large-text/next-level/no-end/ultimately-end
+2017/Q4/November/KW47-KW48/KW47
+extra large text with spaces/next level extra large text/next level/no end/ultimately end

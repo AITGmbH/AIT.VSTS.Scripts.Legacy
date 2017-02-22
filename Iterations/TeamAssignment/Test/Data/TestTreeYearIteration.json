@@ -1,0 +1,51 @@
+{
+  "id": 1,
+  "identifier": "07ad93b4-6772-4913-8c1c-fbd305b564df",
+  "name": "MyFirstProject",
+  "structureType": "iteration",
+  "hasChildren": true,
+  "children": [
+    {
+      "id": 4,
+      "identifier": "82c47187-0f3f-4046-a032-dd627492161d",
+      "name": "2015",
+      "structureType": "iteration",
+      "hasChildren": true,
+      "url": "https://example.com/ddd10814-3263-49a8-94c3-f5d2e0a66097/_apis/wit/classificationNodes/Iterations/Iteration%202"
+    },
+    {
+      "id": 5,
+      "identifier": "02383311-3b02-470b-a374-5cf66047a8cb",
+      "name": "2016",
+      "structureType": "iteration",
+      "hasChildren": false,
+      "url": "https://example.com/ddd10814-3263-49a8-94c3-f5d2e0a66097/_apis/wit/classificationNodes/Iterations/Iteration%203"
+    },
+    {
+      "id": 15,
+      "identifier": "665cc65a-e081-47f4-bb55-df2c0596218e",
+      "name": "2017",
+      "structureType": "iteration",
+      "hasChildren": true,
+      "attributes": {
+        "startDate": "2015-01-01T00:00:00Z",
+        "finishDate": "2015-12-31T00:00:00Z"
+      },
+      "url": "https://example.com/ddd10814-3263-49a8-94c3-f5d2e0a66097/_apis/wit/classificationNodes/Iterations/2015"
+    },
+    {
+      "id": 16,
+      "identifier": "9aa08132-85bc-49d2-80c7-c939f6fcca89",
+      "name": "2018",
+      "structureType": "iteration",
+      "hasChildren": true,
+      "attributes": {
+        "startDate": "2017-01-01T00:00:00Z",
+        "finishDate": "2017-12-31T00:00:00Z"
+      },
+      "url": "https://example.com/ddd10814-3263-49a8-94c3-f5d2e0a66097/_apis/wit/classificationNodes/Iterations/2017"
+    }
+  ],
+  "_links": { "self": { "href": "https://example.com/ddd10814-3263-49a8-94c3-f5d2e0a66097/_apis/wit/classificationNodes/Iterations" } },
+  "url": "https://example.com/ddd10814-3263-49a8-94c3-f5d2e0a66097/_apis/wit/classificationNodes/Iterations"
+}
