@@ -1,5 +1,5 @@
 # Relate-VstsIteration
-> This PowerShell script relates multiple iterations with teams in VSTS.
+> This PowerShell script relates multiple iterations with teams in VSTS or TFS.
 
 The script relates every exact level of iteration tree to a team. Each child of project iteration is a discrete iteration tree. This means that a project has any number of iteration.
 
@@ -16,8 +16,10 @@ The script relates every exact level of iteration tree to a team. Each child of 
 * [API](#api)
     * [Syntax](#syntax)
     * [Parameter](#parameter)
-        * [Username (required)](#username-required)
-        * [Token (required)](#token-required)
+        * [Username (required, if AuthentificationType="Token")](#username-required-if-AuthentificationTypetoken)
+        * [Token (required, if AuthentificationType="Token")](#token-required-if-AuthentificationTypetoken)
+        * [Credential (required, if AuthentificationType="Basic")](#credential-required-if-AuthentificationTypebasic)
+        * [AuthentificationType (required)](#AuthentificationType-required)
         * [Projecturi (required)](#projecturi-required)
         * [TeamList (optional)](#teamlist-optional)
         * [StartOfIterationPath (optional)](#startofiterationpath-optional)
@@ -39,7 +41,7 @@ The script relates every exact level of iteration tree to a team. Each child of 
 5.  Run the script
 
     ```powershell
-    Relate-VstsIteration -Username “user@example.com” -Projecturi “https://example.visualstudio.com/MyFirstProject” -Token “h2ixjlahgmrfb722yo23kzohh9f1evc2wf1bwhnwme9fn59dky3v”
+    Relate-VstsIteration -Username "user@example.com" -Projecturi "https://example.visualstudio.com/MyFirstProject" -Token "h2ixjlahgmrfb722yo23kzohh9f1evc2wf1bwhnwme9fn59dky3v" -AuthentificationType "Token" -TeamList "Team"
     ```
 
 ##  Run Unit Test
@@ -58,7 +60,9 @@ The script relates every exact level of iteration tree to a team. Each child of 
     ```
 
 # Usage
-The script is suitable for Visual Studio Team Services, not for the local Team Foundation Server. The Login needs a Personal Access Token and corresponding Uri-Adresse ([How To: CreatePersonal AccessToken](https://www.visualstudio.com/en-us/docs/setup-admin/team-services/use-personal-access-tokens-to-authenticate)).
+The script is suitable for Visual Studio Team Services and for the local Team Foundation Server. When you use the Visual Studio Team Services, 
+the Login needs a Personal Access Token and corresponding Uri-Adresse ([How To: CreatePersonal AccessToken](https://www.visualstudio.com/en-us/docs/setup-admin/team-services/use-personal-access-tokens-to-authenticate)).
+When you use the Team Foundation Server, the Login needs Credential and corresponding Uri-Adresse, because all Version older than 2017 has no AccessToken.  
 
 ## Example 1: Relate all Weeks of 2017 to Team1
 
@@ -76,12 +80,17 @@ Calling script:
 
 Both calls have the same result. It is only important to gives a level 4 iteration in the parameter "StartOfIterationPath". It is not important, which iteration item you specify on the parameter.  
 
+VSTS:
 ```PowerShell
-Relate-VstsIteration -Username "[Login name]" -Projecturi "https://[Subscription].visualstudio.com/[Project name]" -token "[Key]" -StartOfIterationPath "2017/Q2/April/KW 17"
+Relate-VstsIteration -Username "[Login name]" -Projecturi "https://[Subscription].visualstudio.com/[Project name]" -token "[Key]" -StartOfIterationPath "2017/Q2/April/KW 17" -AuthentificationType "Token" -TeamList "MyFirstProject"
 ```
 
 ```PowerShell
-Relate-VstsIteration -Username "[Login name]" -Projecturi "https://[Subscription].visualstudio.com/[Project name]" -token "[Key]" -StartOfIterationPath "2017/Q1/January/KW 1"
+Relate-VstsIteration -Username "[Login name]" -Projecturi "https://[Subscription].visualstudio.com/[Project name]" -token "[Key]" -StartOfIterationPath "2017/Q1/January/KW 1" -AuthentificationType "Token" -TeamList "MyFirstProject"
+```
+TFS: 
+```PowerShell
+Relate-VstsIteration -Projecturi "https://[Url]/[Collection name]/[Project name]" -StartOfIterationPath "2017/Q1/January/KW 1" -AuthentificationType "Basic" -(Get-Credential -UserName "Domain\User" -Message: "TFS 2015 Login")
 ```
 
 When the scripts is finished, all of the weeks are mapped:
@@ -98,8 +107,9 @@ General iteration tree of the project „GeneralProject"
 
 Calling script:
 
+VSTS:
 ```PowerShell
-Relate-VstsIteration -Username "[Login name]" -Projecturi "https://[Subscription].visualstudio.com/GeneralProject" -token "[Key]"
+Relate-VstsIteration -Username "[Login name]" -Projecturi "https://[Subscription].visualstudio.com/GeneralProject" -token "[Key]" -AuthentificationType "Token" -TeamList "Team1"
 ```
 
 Result in all teams of the project:
@@ -116,8 +126,9 @@ General iteration tree of the project „GeneralProject"
 
 Calling script:
 
+VSTS:
 ```PowerShell
-Relate-VStsIteration -Username "[Login name]" -Projecturi "https://[Subdiscription].visualstudio.com/[Project name]" -Token "[Key]" -TeamList "Team1" -StartOfIterationPath "Iteration Level 1/Iteration Level 1.1/Iteration Level 1.1.3/Iteration Level 1.1.3.1/Iteration Level 1.1.3.1.5"
+Relate-VStsIteration -Username "[Login name]" -Projecturi "https://[Subdiscription].visualstudio.com/[Project name]" -Token "[Key]" -AuthentificationType "Token" -TeamList "Team1" -StartOfIterationPath "Iteration Level 1/Iteration Level 1.1/Iteration Level 1.1.3/Iteration Level 1.1.3.1/Iteration Level 1.1.3.1.5"
 ```
 
 Result in "Team1" of the project:
@@ -134,6 +145,7 @@ Iteration tree of the project „MyFirstProject"
 
 Calling script:
 
+VSTS:
 ```PowerShell
 Relate-VStsIteration -Username "[Login]" -Token "[Key]" -Projecturi "https://[Subdiscription].visualstudio.com/[Project] -TeamList "Marketing" -StartOfIterationPath "2017/Q1"
 ```
@@ -146,12 +158,12 @@ Result:
 ## Syntax
 
 ```PowerShell
-Relate-VstsIteration [-Username] <String> [-Projecturi] <Uri> [-Token] <String> [[-TeamList] <String[]> [-StartOfIterationPath]<String>]
+Relate-VstsIteration [-Username] <String> [-Projecturi] <Uri> [-Token] <String> [-Credential] PSCredential [AuthentificationType] <String> [[-TeamList] <String[]> [-StartOfIterationPath]<String>]
 ```
 
 ## Parameter 
 
-### Username (required)
+### Username (required, if AuthentificationType="Token")
 **Type:** String  
 **Description:** Login name of the Visual Studio Team Services account.  
 **Example:**
@@ -159,17 +171,37 @@ Relate-VstsIteration [-Username] <String> [-Projecturi] <Uri> [-Token] <String> 
 "test.email@example.com"  
 ```
 
-### Token (required)
-**Type**: String  
+### Token (required, if AuthentificationType="Token")
+**Type:** String  
 **Description:** Personal Access Token, which is association with the username.  
 **Example**: 
 ```PowerShell
 "h2ixjlahgmrfb722yo23kzohh9f1evc2wf1bwhnwme9fn59dky3v"  
 ```
 
+### Credential (required, if AuthentificationType="Basic")
+**Type:** PSCredential  
+**Description:** It is a set of security credentials, such as a user name and a password.  
+**Example**:  
+```PowerShell
+Get-Credential -UserName "Domain\Username" -Message: "TFS 2015 Login"
+```
+
+### AuthentificationType (required)
+**Type:** string  
+**Description:** Only the two value "Token" and "Basic" are allow.  
+**Example**:  
+```PowerShell
+"Token"
+```
+
+```PowerShell
+"Basic"
+```
+
 ### Projecturi (required)
 **Type:** Uri  
-**Description:** The URI of the Team Project.  
+**Description:** The URI of the Team Project.
 **Example**: 
 ```PowerShell
 "https://example.visualstudio.com/MyFirstProject"
@@ -178,9 +210,9 @@ Relate-VstsIteration [-Username] <String> [-Projecturi] <Uri> [-Token] <String> 
 "https://sec.visualstudio.com/AppSec"
 ```
 
-### TeamList (optional)
+### TeamList (required)
 **Type:** String[]  
-**Description:** List of Team names. If no value is provided, the script identifies all team names automatic.  
+**Description:** List of Team names.  
 **Example:** 
 ```PowerShell
 "Team1", "Team2", "Team3"
@@ -194,7 +226,8 @@ Relate-VstsIteration [-Username] <String> [-Projecturi] <Uri> [-Token] <String> 
 
 ### StartOfIterationPath (optional)
 **Type:** String  
-**Description:** The level at the iteration tree which is assigned to the teams. If no value is provided, the script relates all root iteration to the teams. Warning: The project name must not be indicated to the path.  
+**Description:** The level at the iteration tree which is assigned to the teams. If no value is provided, the script relates all root iteration to the teams. Warning: The project name must not be indicated to the path.
+ It is important to use a slash as delimiter.  
 **Example:** 
 ```PowerShell
 "2017/Q1/January/KW 1"
