@@ -1,7 +1,7 @@
 #
 # read a List of iterations and relate to a team
 #
-#Update 1: insert PSCredential for basic authenification
+#Update 1: insert PSCredential for basic authentification
 function Relate-VstsIteration{
 
 	param(
@@ -38,43 +38,7 @@ function Relate-VstsIteration{
 	process{   
 		[int]$nodeDepth  = 0
 
-		function AddIterationToTeamList{
-			param ($iterationList, [String[]]$teams, [Uri] $projectUrl )
-			$success = $true;
-
-			foreach ($it in $iterationList){
-				$body = @{
-					id = $it.identifier
-				}
-	
-				$jsonBody = ConvertTo-Json -InputObject  $body
-				$query = "/_apis/work/teamsettings/iterations?api-version=v2.0-preview"
-
-				foreach($t in $teams){
-					$addIturl = $projectUrl.AbsoluteUri + "/" + $t.trim() + $query
-
-					if ($AuthentificationType -eq 'Token'){
-
-						$result = Invoke-RestMethod -Method Post -ContentType "application/json" -Uri $addIturl -Headers @{Authorization=("Basic {0}" -f $base64AuthInfo)} -Body $jsonBody -ErrorAction SilentlyContinue
-					}
-
-					if ($AuthentificationType -eq 'Basic')
-					{
-						Invoke-RestMethod -Method Post -ContentType "application/json" -Uri $addIturl -Credential $Credential -Body $jsonBody -ErrorAction SilentlyContinue
-					}
-
-					if ($result -ne $null){
-						$success = $false
-						break
-					}
-				}
-
-				if(!$success){
-					Write-Verbose "process aborted"
-					break;
-				}
-			}
-		}
+		. ./AddIterationToTeam.ps1
 
 		. ./GetNextChild.ps1
 
@@ -118,6 +82,6 @@ function Relate-VstsIteration{
 		}
 
 		$addList   = GetNextChild $iterationList.children 1 $nodeDepth
-		AddIterationToTeamList $addList $TeamList $Projecturi
+		AddIterationsToTeamList $addList $TeamList $Projecturi $Username $Token $Credential $AuthentificationType
 		}
 }
