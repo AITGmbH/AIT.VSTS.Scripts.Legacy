@@ -82,7 +82,7 @@ function Relate-VstsIteration{
 
 		. ./GetStartRootNode.ps1
 
-		. ./CheckAuthenfication.ps1
+		. ./CheckAuthentification.ps1
 
 		$nodeDepth = GetNodeDepth $StartOfIterationPath
 		$root      = GetStartRootNode $StartOfIterationPath
