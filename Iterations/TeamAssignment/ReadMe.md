@@ -90,7 +90,7 @@ Relate-VstsIteration -Username "[Login name]" -Projecturi "https://[Subscription
 ```
 TFS: 
 ```PowerShell
-Relate-VstsIteration -Projecturi "https://[Url]/[Collection name]/[Project name]" -StartOfIterationPath "2017/Q1/January/KW 1" -AuthentificationType "Basic" -(Get-Credential -UserName "Domain\User" -Message: "TFS 2015 Login")
+Relate-VstsIteration -Projecturi "https://[Url]/[Collection name]/[Project name]" -StartOfIterationPath "2017/Q1/January/KW 1" -AuthentificationType "Basic" -Credential (Get-Credential -UserName "Domain\User" -Message: "TFS 2015 Login")
 ```
 
 When the scripts is finished, all of the weeks are mapped:
